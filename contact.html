@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Nonna's Empanada</title>
+
+  <!-- Stylesheets -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="page-wrapper">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Nonna's Logo" class="navbar-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#centeredNav"
+          aria-controls="centeredNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="centeredNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- How to Order Section -->
+    <div class="container" style="margin-top: 150px;">
+      <h2 class="how-to-order-title">How to Order</h2>
+      <p class="how-to-order-instructions">
+        Copy and paste the form below, fill it up, and send it to our
+        <a href="https://www.instagram.com/nonnascebu/" target="_blank" rel="noopener noreferrer"><strong>Instagram</strong></a>
+        or
+        <a href="https://www.facebook.com/profile.php?id=61577749781672" target="_blank" rel="noopener noreferrer"><strong>Facebook</strong></a> pages.
+      </p>
+    </div>
+
+    <!-- Order Form and Image -->
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Menu Image -->
+        <div class="col-md-6 mb-4 mb-md-0">
+          <img src="images/menu.jpg" alt="Nonna's Menu" class="order-image" />
+        </div>
+
+        <!-- Copy-paste Form -->
+        <div class="col-md-6">
+          <div class="order-form-container">
+            <pre id="orderText" style="font-family: 'Courier New', monospace; white-space: pre-wrap; font-size: 0.95rem; color: #333;">
+✍️ Name:
+✍️ 2 Contact numbers:
+✍️ Expected delivery date:
+✍️ Maxim address pin and full address:
+            </pre>
+            <button onclick="copyToClipboard()" class="btn-empanada mt-3">click to copy form!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Icons Under Form -->
+    <div class="container mt-4 mb-4 d-flex justify-content-center gap-3">
+      <!-- Facebook -->
+      <a href="https://www.facebook.com/profile.php?id=61577749781672" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        <img src="images/facebook.png" alt="Facebook icon" class="form-facebook-icon" />
+      </a>
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/nonnascebu/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+        <img src="images/instagram.png" alt="Instagram icon" class="form-instagram-icon" />
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background-color: #ccd3a8; padding: 1rem 0; border-top: none; margin-top: 3rem;">
+      <div class="container">
+        <div class="row text-center text-md-start">
+          <div class="col-12 col-md-6 mb-3 mt-4 d-flex flex-column align-items-center align-items-md-start">
+            <p class="text-center mt-2" style="font-size: 0.90rem; color: #1d4630;">
+              All images and content © 2025 Nonna's Empanada. All rights reserved.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-end mb-3 mt-4">
+            <ul class="nav list-unstyled d-flex">
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=61577749781672" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <img src="images/facebook.png" alt="Facebook icon" class="facebook-icon" />
+                </a>
+              </li>
+              <li class="ms-3">
+                <a class="text-body-secondary" href="https://www.instagram.com/nonnascebu/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <img src="images/instagram.png" alt="Instagram icon" class="instagram-icon" />
+                </a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+
+        <!-- Icon Credits -->
+        <p style="font-size: 0.75rem; color: gray; margin-top: 1.5rem; text-align: center;">
+          Facebook icon by
+          <a href="https://www.flaticon.com/free-icons/facebook" target="_blank" rel="noopener noreferrer">
+            Freepik - Flaticon
+          </a>
+        </p>
+        <p style="font-size: 0.75rem; color: gray; margin-top: 0.5rem; text-align: center;">
+          Instagram icon by
+          <a href="https://www.freepik.com/free-vector/instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_18246125.html" target="_blank" rel="noopener noreferrer">
+            rawpixel.com on Freepik
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
